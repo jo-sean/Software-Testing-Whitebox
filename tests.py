@@ -21,8 +21,8 @@ class TestCase(unittest.TestCase):
 
     def test2_50(self):
         less_than_100 = 50
-        self.assertFalse(contrived_func(less_than_100),
-                         msg=''.format(contrived_func(less_than_100)))
+        self.assertTrue(contrived_func(less_than_100),
+                        msg=''.format(contrived_func(less_than_100)))
 
     def test3_362(self):
         greater_than_150 = 362
@@ -45,7 +45,7 @@ class TestCase(unittest.TestCase):
                         msg=''.format(contrived_func(val_is_80)))
 
     def test7_75(self):
-        val_is_75 = 75
+        val_is_75 = 75.5
         self.assertTrue(contrived_func(val_is_75),
                         msg=''.format(contrived_func(val_is_75)))
 
