@@ -49,6 +49,21 @@ class TestCase(unittest.TestCase):
         self.assertTrue(contrived_func(val_is_50),
                         msg=''.format(contrived_func(val_is_50)))
 
+    def test8_80(self):
+        less_than_100 = 77
+        self.assertFalse(contrived_func(less_than_100),
+                         msg=''.format(contrived_func(less_than_100)))
+
+    def test9_80(self):
+        less_than_100 = 78
+        self.assertFalse(contrived_func(less_than_100),
+                         msg=''.format(contrived_func(less_than_100)))
+
+    def test10_80(self):
+        less_than_100 = 79
+        self.assertFalse(contrived_func(less_than_100),
+                         msg=''.format(contrived_func(less_than_100)))
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
