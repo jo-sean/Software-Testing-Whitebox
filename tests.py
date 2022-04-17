@@ -16,7 +16,7 @@ class TestCase(unittest.TestCase):
     # Picked using Category Partition Testing
     def test1_TT(self):
         less_than_150 = 125
-        self.assertFalse(contrived_func(less_than_150),
+        self.assertTrue(contrived_func(less_than_150),
                          msg=''.format(contrived_func(less_than_150)))
 
     def test2_TF(self):
@@ -24,7 +24,12 @@ class TestCase(unittest.TestCase):
         self.assertFalse(contrived_func(less_than_100),
                          msg=''.format(contrived_func(less_than_100)))
 
-    def test2_6(self):
+    def test3_F(self):
+        greater_than_150 = 151
+        self.assertFalse(contrived_func(greater_than_150),
+                         msg=''.format(contrived_func(greater_than_150)))
+
+    def test4_6(self):
         val_is_6 = 6
         self.assertFalse(contrived_func(val_is_6),
                          msg=''.format(contrived_func(val_is_6)))
