@@ -17,7 +17,7 @@ class TestCase(unittest.TestCase):
     def test1_TT(self):
         less_than_150 = 125
         self.assertTrue(contrived_func(less_than_150),
-                         msg=''.format(contrived_func(less_than_150)))
+                        msg=''.format(contrived_func(less_than_150)))
 
     def test2_TF(self):
         less_than_100 = 99
@@ -33,6 +33,21 @@ class TestCase(unittest.TestCase):
         val_is_6 = 6
         self.assertFalse(contrived_func(val_is_6),
                          msg=''.format(contrived_func(val_is_6)))
+
+    def test5_8(self):
+        val_is_8 = 8
+        self.assertFalse(contrived_func(val_is_8),
+                         msg=''.format(contrived_func(val_is_8)))
+
+    def test6_80(self):
+        val_is_80 = 80
+        self.assertFalse(contrived_func(val_is_80),
+                         msg=''.format(contrived_func(val_is_80)))
+
+    def test7_50(self):
+        val_is_50 = 50
+        self.assertFalse(contrived_func(val_is_50),
+                         msg=''.format(contrived_func(val_is_50)))
 
 
 if __name__ == '__main__':
