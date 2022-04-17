@@ -44,8 +44,9 @@ class TestCase(unittest.TestCase):
         self.assertTrue(contrived_func(val_is_80),
                         msg=''.format(contrived_func(val_is_80)))
 
+# Make sure to find c12. Make a logic table
     def test7_75(self):
-        val_is_75 = 75.5
+        val_is_75 = 61
         self.assertTrue(contrived_func(val_is_75),
                         msg=''.format(contrived_func(val_is_75)))
 
