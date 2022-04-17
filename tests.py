@@ -36,18 +36,18 @@ class TestCase(unittest.TestCase):
 
     def test5_8(self):
         val_is_8 = 8
-        self.assertFalse(contrived_func(val_is_8),
-                         msg=''.format(contrived_func(val_is_8)))
+        self.assertTrue(contrived_func(val_is_8),
+                        msg=''.format(contrived_func(val_is_8)))
 
     def test6_80(self):
         val_is_80 = 80
-        self.assertFalse(contrived_func(val_is_80),
-                         msg=''.format(contrived_func(val_is_80)))
+        self.assertTrue(contrived_func(val_is_80),
+                        msg=''.format(contrived_func(val_is_80)))
 
     def test7_50(self):
         val_is_50 = 50
-        self.assertFalse(contrived_func(val_is_50),
-                         msg=''.format(contrived_func(val_is_50)))
+        self.assertTrue(contrived_func(val_is_50),
+                        msg=''.format(contrived_func(val_is_50)))
 
 
 if __name__ == '__main__':
