@@ -14,10 +14,20 @@ class TestCase(unittest.TestCase):
 
     # Verifies if empty string returns False
     # Picked using Category Partition Testing
-    def test1_empty(self):
-        empty_string = ""
-        self.assertFalse(contrived_func(empty_string),
-                         msg=''.format(contrived_func(empty_string)))
+    def test1_TT(self):
+        less_than_150 = 125
+        self.assertFalse(contrived_func(less_than_150),
+                         msg=''.format(contrived_func(less_than_150)))
+
+    def test2_TF(self):
+        less_than_100 = 99
+        self.assertFalse(contrived_func(less_than_100),
+                         msg=''.format(contrived_func(less_than_100)))
+
+    def test2_6(self):
+        val_is_6 = 6
+        self.assertFalse(contrived_func(val_is_6),
+                         msg=''.format(contrived_func(val_is_6)))
 
 
 if __name__ == '__main__':
